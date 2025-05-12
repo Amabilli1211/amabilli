@@ -1,14 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
-
-/* Variáveis */
-:root {
-    --primary-color: #026773;
-    --secondary-color: #3CA6A6;
-    --text-color: #024959;
-    --background-color: #F2E3D5;
-    --button-hover: #012E40;
-    --font-body: "Chocolate Classical Sans", serif;
-    --font-titulo: "Rakkas", serif;
+/* Estilos gerais */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* código omitido */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #008000; /* Verde */
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Estilos da seção principal */
+main {
+    padding: 20px;
+}
+
+.conteudo {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.conteudo h2 {
+    color: #008000; /* Verde */
+    border-bottom: 2px solid #008000;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.conteudo article {
+    margin-bottom: 20px;
+}
+
+.conteudo h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f90; /* Laranja */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+}
+
+.conteudo ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.conteudo li {
+    margin-bottom: 8px;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.9em;
+}
+
+.cta-footer {
+    color: #f90; /* Laranja */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cta-footer:hover {
+    color: #e68a00;
+}
